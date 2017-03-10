@@ -1,0 +1,6 @@
+{
+  "name": "React Redux Universal",
+  "description": "A template React app using Express 4",
+  "repository": "https://github.com/astnt/react-redux-universal-heroku",
+  "keywords": ["react", "redux", "universal", "node", "express"]
+}
