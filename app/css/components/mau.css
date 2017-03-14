@@ -1,0 +1,23 @@
+@import '../common/typography';
+@import '../common/colors';
+
+.area {
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  z-index: -1;
+}
+
+.presentation {
+  width: 250px;
+  height: 100%;
+  background: var(--colorBlack);
+ }
+.right-bar {
+  width: 100%;
+  height: 100%;
+  background: var(--colorWhite);
+}

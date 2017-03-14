@@ -1,0 +1,95 @@
+@import '../common/colors';
+@import '../common/typography';
+
+.navigation {
+  position: fixed;
+  padding: 0px;
+  text-decoration: none;
+}
+
+.navigation ul{
+  -webkit-padding-start: 0px;
+  padding-left: 0px;
+}
+
+.navigation ul li a{
+  opacity: 0;
+  -webkit-padding-start: 0px;
+  max-height: 0px;
+  -webkit-transition: opacity 200ms, max-height 500ms ease;  /* Safari */
+  transition: opacity 200ms, max-height 500ms ease;
+}
+
+.navigation:hover ul li a{
+  display: block;
+  max-height: 400px;
+  opacity: 1;
+}
+
+li{
+  text-align: right;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,0.9+29,1+60,1+100 */
+  /*
+  background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 29%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 100%);
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 29%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 29%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
+   */
+  background: rgba(255,255,255,.4);
+  line-height: 2;
+  display: block;
+  font-size: 16px;
+  border-right: 11px solid white;
+  -webkit-transition: font-size 200ms, border-right 300ms ease;  /* Safari */
+  transition: font-size 200ms, border-right 300ms ease;
+}
+
+li:hover {
+  font-size: 24px;
+  border-right: 18px solid white;
+}
+
+.item {
+  color: var(--colorWhite);
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  margin: 10px 0px;
+  padding-right: 10px;
+  text-shadow: 5px 5px 8px black;
+
+}
+
+.logo {
+  font-size: var(--fontHuge);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 4px solid var(--colorWhite);
+  line-height: 20px;
+  -webkit-transition: border-bottom 200ms, line-height 150ms ease;  /* Safari */
+  transition: border-bottom 200ms, line-height 150ms ease;
+  /*text-shadow: 5px 5px 8px black;*/
+}
+
+.logo:hover{
+  border-bottom: 15px solid var(--colorWhite);
+  line-height: 45px;
+}
+
+/*
+.logo::after{
+  content: "+";
+  font-size: 30;
+  color: var(--colorWhite);
+  position: absolute;
+  margin-top: 12px;
+  padding-left: 2px;
+  font-size: 35px;
+  font-weight: 100;
+}
+*/
+
+.active {
+  color: var(--colorWhite);
+  /*--colorDodgerBlue);*/
+}

@@ -1,6 +1,10 @@
 {
-  "name": "React Redux Universal",
-  "description": "A template React app using Express 4",
-  "repository": "https://github.com/astnt/react-redux-universal-heroku",
-  "keywords": ["react", "redux", "universal", "node", "express"]
+  "name": "React Node Express Mongo",
+  "description": "A barebones Node.js app using Express 4 with MongoDB, and ReactJS in Flux, using Webpack as a module bundler",
+  "repository": "https://github.com/choonkending/react-webpack-node",
+  "logo": "https://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static", "react", "webpack", "mongodb"],
+  "addons" : [
+  	"mongolab"
+  ]
 }
